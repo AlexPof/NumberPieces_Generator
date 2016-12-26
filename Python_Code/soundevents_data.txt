@@ -1,0 +1,12 @@
+{
+	"tracks": [ [{"type":"OFF","note":62,"velocity":40,"time":5.067},
+	{"type":"ON","note":62,"velocity":40,"time":2.067},
+	{"type":"ON","note":62,"velocity":40,"time":7.067},
+	{"type":"OFF","note":62,"velocity":40,"time":8.067}]
+	,
+	[{"type":"OFF","note":67,"velocity":40,"time":6.067},
+	{"type":"ON","note":67,"velocity":40,"time":1.067},
+	{"type":"ON","note":67,"velocity":40,"time":6.567},
+	{"type":"OFF","note":67,"velocity":40,"time":12.067}]
+	]
+}
