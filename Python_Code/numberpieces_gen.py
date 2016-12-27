@@ -193,7 +193,8 @@ def chooseTB(limits,t_prec,type="uniform"):
 						- "note": list of integers representing the notes pitches (percussion instruments are assumed
 								  to be assigned specific pitches on a MIDI keyboard) inside the given time-bracket.
 								  -1 indicates a pause between notes.
-						- "limits": list of 4 values in seconds: [starting time interval beginning, starting time interval end, ending time interval beginning, ending time interval end]
+						- "limits": list of 4 values in seconds:
+									[starting time interval beginning, starting time interval end, ending time interval beginning, ending time interval end]
 
 
 """
