@@ -1,0 +1,53 @@
+{
+	"players": [
+	{"name":"Left hand","timebrackets":[
+									{"contents":[{"note":[36]}],"limits":[0,75,110,125]},
+									{"contents":[{"note":[84,86,56]}],"limits":[120,135,130,145]},
+									{"contents":[{"note":[67,49,39]}],"limits":[140,155,150,165]},
+									{"contents":[{"note":[60]}],"limits":[155,215,195,255]},
+									{"contents":[{"note":[68,27,22]}],"limits":[235,295,275,335]},
+									{"contents":[{"note":[72,105]}],"limits":[325,355,345,375]},
+									{"contents":[{"note":[108]}],"limits":[360,405,390,435]},
+									{"contents":[{"note":[73,33]}],"limits":[410,485,460,535]},
+									{"contents":[{"note":[93]}],"limits":[515,575,555,615]},
+									{"contents":[{"note":[87,33]}],"limits":[590,665,640,715]},
+									{"contents":[{"note":[33,26]}],"limits":[695,755,735,795]},
+									{"contents":[{"note":[82,39,29]}],"limits":[770,845,820,895]},
+									{"contents":[{"note":[60,83,96]}],"limits":[890,905,900,915]},
+									{"contents":[{"note":[62,74]}],"limits":[910,925,920,935]},
+									{"contents":[{"note":[74,77,29]}],"limits":[925,955,945,975]},
+									{"contents":[{"note":[67,81,41]}],"limits":[970,985,980,995]},
+									{"contents":[{"note":[41]}],"limits":[985,1030,1015,1060]},
+									{"contents":[{"note":[52,37]}],"limits":[1055,1070,1065,1080]},
+									{"contents":[{"note":[64,66,40]}],"limits":[1065,1110,1095,1140]},
+									{"contents":[{"note":[59]}],"limits":[1135,1150,1145,1160]},
+									{"contents":[{"note":[68,30]}],"limits":[1140,1200,1180,1240]}
+									]},
+	{"name":"Right hand","timebrackets":[
+									{"contents":[{"note":[59,49,78]}],"limits":[0,60,40,100]},
+									{"contents":[{"note":[54,40]}],"limits":[90,120,110,140]},
+									{"contents":[{"note":[66]}],"limits":[135,150,145,160]},
+									{"contents":[{"note":[50,54,28]}],"limits":[155,170,165,180]},
+									{"contents":[{"note":[71,41]}],"limits":[170,200,190,220]},
+									{"contents":[{"note":[61,63,37]}],"limits":[210,240,230,260]},
+									{"contents":[{"note":[81]}],"limits":[245,290,275,320]},
+									{"contents":[{"note":[59,22]}],"limits":[300,360,340,400]},
+									{"contents":[{"note":[58,28,30]}],"limits":[390,420,410,440]},
+									{"contents":[{"note":[48,53]}],"limits":[425,470,455,500]},
+									{"contents":[{"note":[77,86]}],"limits":[495,510,505,520]},
+									{"contents":[{"note":[46,38]}],"limits":[500,560,540,600]},
+									{"contents":[{"note":[41]}],"limits":[595,610,605,620]},
+									{"contents":[{"note":[65,23,27]}],"limits":[595,670,645,720]},
+									{"contents":[{"note":[88,99]}],"limits":[705,750,735,780]},
+									{"contents":[{"note":[25,100]}],"limits":[760,820,800,860]},
+									{"contents":[{"note":[48,44]}],"limits":[855,870,865,880]},
+									{"contents":[{"note":[103]}],"limits":[865,910,895,940]},
+									{"contents":[{"note":[80,88]}],"limits":[930,960,950,980]},
+									{"contents":[{"note":[29,98]}],"limits":[970,1000,990,1020]},
+									{"contents":[{"note":[49,50,29]}],"limits":[1010,1040,1030,1060]},
+									{"contents":[{"note":[94,107]}],"limits":[1055,1070,1065,1080]},
+									{"contents":[{"note":[59,78,87]}],"limits":[1065,1110,1095,1140]},
+									{"contents":[{"note":[67,75,95]}],"limits":[1115,1190,1165,1240]}
+									]}
+	]
+}

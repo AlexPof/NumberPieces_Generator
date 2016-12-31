@@ -93,7 +93,8 @@ def writeMIDI(filepath,data):
 			
 			# Number of bytes of the track chunk: 15 for standard info (120bpm, fake notes, etc.), 4 for the tail, the rest depends on the data
 			trackdata_numbytes = 15+4+3*len(trackdata_diff)+sum([len(x[3]) for x in trackdata_diff])
-			
+			# If sustain is used
+			trackdata_numbytes += 4 
 			
 			## Writing the track chunk to the MIDI file
 			f.write("MTrk")
@@ -102,11 +103,15 @@ def writeMIDI(filepath,data):
 			# 120 bpm
 			f.write(struct.pack(">BBBB",0,0xFF,0x51,0x03))
 			f.write(struct.pack(">BBB",0x07,0xA1,0x20))
+			
 
 			# Fake note at the beginning to mark 0 time
 			f.write(struct.pack(">BBBB",0,0x90,0,40))
 			f.write(struct.pack(">BBBB",1,0x80,0,40))
 			
+			#Sustain pedal on
+			f.write(struct.pack(">BBBB",2,0xB0,0x40,0x41))
+
 			# Writing one note
 			for x in trackdata_diff:
 				for y in x[3]:
@@ -200,7 +205,7 @@ def chooseTB(limits,t_prec,type="uniform"):
 """
 
 
-with open("five_data.txt","r") as jsonfile:
+with open("one5_data.txt","r") as jsonfile:
 	numberpiece = json.load(jsonfile)
 	
 ## Generating the Number Piece
@@ -215,21 +220,24 @@ for player in numberpiece["players"]:
 	for tb in player["timebrackets"]:
 		## Check if the time-bracket is still playable
 		if t_prec<tb["limits"][1]:
-			start_time,end_time = chooseTB(tb["limits"],t_prec,type="gaussian")
+			start_time,end_time = chooseTB(tb["limits"],t_prec,type="uniform")
 			
 			## Generating the intermediate cue times successively, in case multiple notes are present in a time-bracket
 			cue_times=[start_time,end_time]
-			num_notes = len(tb["note"])
+			num_notes = len(tb["contents"])
 			c=start_time
 			for i in range(num_notes-1):
-				cue_times.append(pick_time(c,end_time,type="uniform"))
+				t = pick_time(c,end_time,type="uniform")
+				cue_times.append(t)
+				c = t
 			cue_times = sorted(cue_times)
 			
 			for i in range(num_notes):
-				## -1 indicates a pause (silence)
-				if tb["note"][i]>-1:
-					track.append({"type":"ON","note":tb["note"][i],"velocity":40,"time":cue_times[i]})
-					track.append({"type":"OFF","note":tb["note"][i],"velocity":40,"time":cue_times[i+1]})
+				for note in tb["contents"][i]["note"]:
+					## -1 indicates a pause (silence)
+					if note>-1:
+						track.append({"type":"ON","note":note,"velocity":40,"time":cue_times[i]})
+						track.append({"type":"OFF","note":note,"velocity":40,"time":cue_times[i+1]})
 			t_prec = end_time
 	tracks_list.append(track)
 	
