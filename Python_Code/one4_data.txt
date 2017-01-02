@@ -1,22 +1,22 @@
 {
 	"players": [
 	{"name":"Left hand","timebrackets":[
-									{"note":[64],"limits":[0,60,40,100]},
-									{"note":[67],"limits":[85,125,110,155]},
-									{"note":[60],"limits":[140,185,170,215]},
-									{"note":[67],"limits":[200,245,230,275]},
-									{"note":[71],"limits":[250,325,300,375]},
-									{"note":[60],"limits":[365,395,385,415]}
+									{"contents":[{"note":[64]}],"limits":[0,60,40,100]},
+									{"contents":[{"note":[67]}],"limits":[85,125,110,155]},
+									{"contents":[{"note":[60]}],"limits":[140,185,170,215]},
+									{"contents":[{"note":[67]}],"limits":[200,245,230,275]},
+									{"contents":[{"note":[71]}],"limits":[250,325,300,375]},
+									{"contents":[{"note":[60]}],"limits":[365,395,385,415]}
 									]},
 	{"name":"Right hand","timebrackets":[
-									{"note":[62],"limits":[10,15,10,15]},
-									{"note":[67],"limits":[35,45,35,45]},
-									{"note":[64],"limits":[70,75,70,75]},
-									{"note":[74],"limits":[80,95,90,105]},
-									{"note":[71],"limits":[115,125,115,125]},
-									{"note":[69],"limits":[165,185,165,185]},
-									{"note":[74],"limits":[200,275,250,325]},
-									{"note":[60],"limits":[340,355,340,355]}
+									{"contents":[{"note":[62]}],"limits":[10,15,10,15]},
+									{"contents":[{"note":[67]}],"limits":[35,45,35,45]},
+									{"contents":[{"note":[64]}],"limits":[70,75,70,75]},
+									{"contents":[{"note":[74]}],"limits":[80,95,90,105]},
+									{"contents":[{"note":[71]}],"limits":[115,125,115,125]},
+									{"contents":[{"note":[69]}],"limits":[165,185,165,185]},
+									{"contents":[{"note":[74]}],"limits":[200,275,250,325]},
+									{"contents":[{"note":[60]}],"limits":[340,355,340,355]}
 									]}
 	]
 }

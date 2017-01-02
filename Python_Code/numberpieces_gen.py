@@ -94,7 +94,7 @@ def writeMIDI(filepath,data):
 			# Number of bytes of the track chunk: 15 for standard info (120bpm, fake notes, etc.), 4 for the tail, the rest depends on the data
 			trackdata_numbytes = 15+4+3*len(trackdata_diff)+sum([len(x[3]) for x in trackdata_diff])
 			# If sustain is used
-			trackdata_numbytes += 4 
+			#trackdata_numbytes += 4 
 			
 			## Writing the track chunk to the MIDI file
 			f.write("MTrk")
@@ -110,7 +110,7 @@ def writeMIDI(filepath,data):
 			f.write(struct.pack(">BBBB",1,0x80,0,40))
 			
 			#Sustain pedal on
-			f.write(struct.pack(">BBBB",2,0xB0,0x40,0x41))
+			#f.write(struct.pack(">BBBB",2,0xB0,0x40,0x41))
 
 			# Writing one note
 			for x in trackdata_diff:
@@ -195,9 +195,11 @@ def chooseTB(limits,t_prec,type="uniform"):
 				Each dictionary has the following keys and values:
 					- "name": string indicating the name of the player (example: "Clarinet 1", "Unspecified instrument 1", etc.)
 					- "timebrackets": list of dictionaries, each of which represents a time-bracket and has the following keys:
-						- "note": list of integers representing the notes pitches (percussion instruments are assumed
-								  to be assigned specific pitches on a MIDI keyboard) inside the given time-bracket.
+						- "contents": list of dictionaries, representing the note pitches inside the given time-bracket, each of which has the following keys:
+								  - "note": list representing notes pitches (percussion instruments are assumed
+								  to be assigned specific pitches on a MIDI keyboard) to be played simultaneously.
 								  -1 indicates a pause between notes.
+								  Each dictionary is assumed to represent successive sounds.
 						- "limits": list of 4 values in seconds:
 									[starting time interval beginning, starting time interval end, ending time interval beginning, ending time interval end]
 
@@ -205,7 +207,7 @@ def chooseTB(limits,t_prec,type="uniform"):
 """
 
 
-with open("one5_data.txt","r") as jsonfile:
+with open("five_data.txt","r") as jsonfile:
 	numberpiece = json.load(jsonfile)
 	
 ## Generating the Number Piece

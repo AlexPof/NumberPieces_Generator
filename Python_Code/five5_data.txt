@@ -1,45 +1,45 @@
 {
 	"players": [
 	{"name":"Flute","timebrackets":[
-									{"note":[63],"limits":[0,30,20,50]},
-									{"note":[73],"limits":[40,70,60,90]},
-									{"note":[67],"limits":[80,110,100,130]},
-									{"note":[84],"limits":[125,140,135,150]},
-									{"note":[72],"limits":[135,180,165,210]},
-									{"note":[66],"limits":[195,240,225,270]},
-									{"note":[80],"limits":[275,290,285,300]}
+									{"contents":[{"note":[63]}],"limits":[0,30,20,50]},
+									{"contents":[{"note":[73]}],"limits":[40,70,60,90]},
+									{"contents":[{"note":[67]}],"limits":[80,110,100,130]},
+									{"contents":[{"note":[84]}],"limits":[125,140,135,150]},
+									{"contents":[{"note":[72]}],"limits":[135,180,165,210]},
+									{"contents":[{"note":[66]}],"limits":[195,240,225,270]},
+									{"contents":[{"note":[80]}],"limits":[275,290,285,300]}
 									]},
 	{"name":"Clarinet 1","timebrackets":[
-									{"note":[65],"limits":[0,30,20,50]},
-									{"note":[72],"limits":[40,70,60,90]},
-									{"note":[78],"limits":[75,120,105,150]},
-									{"note":[59],"limits":[165,210,195,240]},
-									{"note":[83],"limits":[225,270,255,300]}
+									{"contents":[{"note":[65]}],"limits":[0,30,20,50]},
+									{"contents":[{"note":[72]}],"limits":[40,70,60,90]},
+									{"contents":[{"note":[78]}],"limits":[75,120,105,150]},
+									{"contents":[{"note":[59]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[83]}],"limits":[225,270,255,300]}
 									]},
 	{"name":"Clarinet 2","timebrackets":[
-									{"note":[77],"limits":[0,45,30,75]},
-									{"note":[69],"limits":[60,105,90,135]},
-									{"note":[82],"limits":[150,180,170,200]},
-									{"note":[66],"limits":[195,210,205,220]},
-									{"note":[55],"limits":[210,240,230,260]},
-									{"note":[75],"limits":[250,280,270,300]}
+									{"contents":[{"note":[77]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[69]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[82]}],"limits":[150,180,170,200]},
+									{"contents":[{"note":[66]}],"limits":[195,210,205,220]},
+									{"contents":[{"note":[55]}],"limits":[210,240,230,260]},
+									{"contents":[{"note":[75]}],"limits":[250,280,270,300]}
 									]},
 	{"name":"Bass Clarinet","timebrackets":[
-									{"note":[49],"limits":[0,45,30,75]},
-									{"note":[50],"limits":[65,95,85,115]},
-									{"note":[53],"limits":[100,145,141,175]},
-									{"note":[52],"limits":[170,185,180,195]},
-									{"note":[49],"limits":[185,230,215,260]},
-									{"note":[47],"limits":[250,280,270,300]}
+									{"contents":[{"note":[49]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[50]}],"limits":[65,95,85,115]},
+									{"contents":[{"note":[53]}],"limits":[100,145,141,175]},
+									{"contents":[{"note":[52]}],"limits":[170,185,180,195]},
+									{"contents":[{"note":[49]}],"limits":[185,230,215,260]},
+									{"contents":[{"note":[47]}],"limits":[250,280,270,300]}
 									]},
 	{"name":"Percussion","timebrackets":[
-									{"note":[60],"limits":[0,15,10,25]},
-									{"note":[71],"limits":[45,90,75,120]},
-									{"note":[67],"limits":[105,150,135,180]},
-									{"note":[72],"limits":[175,190,185,200]},
-									{"note":[64],"limits":[195,210,205,220]},
-									{"note":[64],"limits":[210,240,230,260]},
-									{"note":[72],"limits":[250,280,270,300]}
+									{"contents":[{"note":[60]}],"limits":[0,15,10,25]},
+									{"contents":[{"note":[71]}],"limits":[45,90,75,120]},
+									{"contents":[{"note":[67]}],"limits":[105,150,135,180]},
+									{"contents":[{"note":[72]}],"limits":[175,190,185,200]},
+									{"contents":[{"note":[64]}],"limits":[195,210,205,220]},
+									{"contents":[{"note":[64]}],"limits":[210,240,230,260]},
+									{"contents":[{"note":[72]}],"limits":[250,280,270,300]}
 									]}
 	]
 }

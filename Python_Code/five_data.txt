@@ -1,39 +1,39 @@
 {
 	"players": [
 	{"name":"Instrument 1","timebrackets":[
-									{"note":[80],"limits":[0,45,30,75]},
-									{"note":[73],"limits":[60,105,90,135]},
-									{"note":[80,-1,62,84],"limits":[135,135,165,165]},
-									{"note":[74],"limits":[165,210,195,240]},
-									{"note":[67],"limits":[225,270,255,300]}
+									{"contents":[{"note":[80]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[73]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[80]},{"note":[-1]},{"note":[62]},{"note":[84]}],"limits":[135,135,165,165]},
+									{"contents":[{"note":[74]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[67]}],"limits":[225,270,255,300]}
 									]},
 	{"name":"Instrument 2","timebrackets":[
-									{"note":[68,-1,71],"limits":[0,45,30,75]},
-									{"note":[68,-1,76],"limits":[60,105,90,135]},
-									{"note":[65],"limits":[135,135,165,165]},
-									{"note":[73],"limits":[165,210,195,240]},
-									{"note":[64,-1,65,60],"limits":[225,270,255,300]}
+									{"contents":[{"note":[68]},{"note":[-1]},{"note":[71]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[68]},{"note":[-1]},{"note":[76]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[65]}],"limits":[135,135,165,165]},
+									{"contents":[{"note":[73]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[64]},{"note":[-1]},{"note":[65]},{"note":[60]}],"limits":[225,270,255,300]}
 									]},
 	{"name":"Instrument 3","timebrackets":[
-									{"note":[65],"limits":[0,45,30,75]},
-									{"note":[63,67],"limits":[60,105,90,135]},
-									{"note":[68],"limits":[135,135,165,165]},
-									{"note":[70],"limits":[165,210,195,240]},
-									{"note":[53,-1,54],"limits":[225,270,255,300]}
+									{"contents":[{"note":[65]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[63]},{"note":[67]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[68]}],"limits":[135,135,165,165]},
+									{"contents":[{"note":[70]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[53]},{"note":[-1]},{"note":[54]}],"limits":[225,270,255,300]}
 									]},
 	{"name":"Instrument 4","timebrackets":[
-									{"note":[56],"limits":[0,45,30,75]},
-									{"note":[60],"limits":[60,105,90,135]},
-									{"note":[67],"limits":[135,135,165,165]},
-									{"note":[62],"limits":[165,210,195,240]},
-									{"note":[66],"limits":[225,270,255,300]}
+									{"contents":[{"note":[56]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[60]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[67]}],"limits":[135,135,165,165]},
+									{"contents":[{"note":[62]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[66]}],"limits":[225,270,255,300]}
 									]},
 	{"name":"Instrument 5","timebrackets":[
-									{"note":[63,-1,67,70],"limits":[0,45,30,75]},
-									{"note":[71,69],"limits":[60,105,90,135]},
-									{"note":[52,-1,71],"limits":[135,135,165,165]},
-									{"note":[71,-1,60,-1,61],"limits":[165,210,195,240]},
-									{"note":[62],"limits":[225,270,255,300]}
+									{"contents":[{"note":[63]},{"note":[-1]},{"note":[67]},{"note":[70]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[71]},{"note":[69]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[52]},{"note":[-1]},{"note":[71]}],"limits":[135,135,165,165]},
+									{"contents":[{"note":[71]},{"note":[-1]},{"note":[60]},{"note":[-1]},{"note":[61]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[62]}],"limits":[225,270,255,300]}
 									]}
 	]
 }
