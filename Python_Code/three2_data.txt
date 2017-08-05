@@ -1,0 +1,37 @@
+{
+	"players": [
+	{"name":"Percussion 1","timebrackets":[
+									{"contents":[{"note":[62]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[61]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[60]}],"limits":[120,165,150,195]},
+									{"contents":[{"note":[62]}],"limits":[180,225,210,255]},
+									{"contents":[{"note":[62]}],"limits":[255,255,285,285]},
+									{"contents":[{"note":[61]}],"limits":[285,330,315,360]},
+									{"contents":[{"note":[62]}],"limits":[345,390,375,420]},
+									{"contents":[{"note":[62]}],"limits":[405,450,435,480]},
+									{"contents":[{"note":[60]}],"limits":[465,510,495,540]}
+									]},
+	{"name":"Percussion 2","timebrackets":[
+									{"contents":[{"note":[60]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[60]}],"limits":[75,75,105,105]},
+									{"contents":[{"note":[60]}],"limits":[105,150,135,180]},
+									{"contents":[{"note":[62]}],"limits":[165,210,195,240]},
+									{"contents":[{"note":[61]}],"limits":[225,270,255,300]},
+									{"contents":[{"note":[60]}],"limits":[285,330,315,360]},
+									{"contents":[{"note":[62]}],"limits":[345,390,375,420]},
+									{"contents":[{"note":[61]}],"limits":[405,450,435,480]},
+									{"contents":[{"note":[61]}],"limits":[465,510,495,540]}
+									]},
+	{"name":"Percussion 3","timebrackets":[
+									{"contents":[{"note":[62]}],"limits":[0,45,30,75]},
+									{"contents":[{"note":[62]}],"limits":[60,105,90,135]},
+									{"contents":[{"note":[62]}],"limits":[120,165,150,195]},
+									{"contents":[{"note":[62]}],"limits":[180,225,210,255]},
+									{"contents":[{"note":[62]}],"limits":[240,285,270,315]},
+									{"contents":[{"note":[62]}],"limits":[300,345,330,375]},
+									{"contents":[{"note":[60]}],"limits":[360,405,390,435]},
+									{"contents":[{"note":[60]}],"limits":[435,435,465,465]},
+									{"contents":[{"note":[61]}],"limits":[465,510,495,540]}
+									]}
+	]
+}
