@@ -207,7 +207,7 @@ def chooseTB(limits,t_prec,type="uniform"):
 """
 
 
-with open("five_data.txt","r") as jsonfile:
+with open("three2_data.txt","r") as jsonfile:
 	numberpiece = json.load(jsonfile)
 	
 ## Generating the Number Piece
@@ -245,4 +245,4 @@ for player in numberpiece["players"]:
 	
 d = {"tracks":tracks_list}
 
-writeMIDI("example_realization.mid",d)
+writeMIDI("essai.mid",d)
