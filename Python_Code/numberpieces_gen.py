@@ -24,7 +24,7 @@ def encodeVL(theint):
 		if ((theint>>i)&1):
 			break
 	numRelevantBits = i+1
-	numBytes = (numRelevantBits + 6) / 7
+	numBytes = (numRelevantBits + 6) // 7
 	if (numBytes == 0):
 		numBytes=1
 	output=[]
@@ -78,7 +78,7 @@ def writeMIDI(filepath,data):
 
 		## Writing the MIDI file header
 		f.write("MThd")
-		f.write(struct.pack(">ihhh",6,1,len(d["tracks"]),120)) # Length of the header, MIDI type 1, number of track, 120 ticks per quarter
+		f.write(struct.pack(">ihhh",6,1,len(d["tracks"]),1000)) # Length of the header, MIDI type 1, number of track, 1000 ticks per quarter
 
 		for x in data["tracks"]:
 			# Reordering all the sound events by increasing time
@@ -89,7 +89,7 @@ def writeMIDI(filepath,data):
 			trackdata_diff = [[trackdata[0][0],trackdata[0][1],trackdata[0][2],trackdata[0][3]]]
 			for i in range(1,len(trackdata)):
 				trackdata_diff.append([trackdata[i][0],trackdata[i][1],trackdata[i][2],trackdata[i][3]-trackdata[i-1][3]])
-			trackdata_diff = [[x[0],x[1],x[2],encodeVL(int(240.*x[3]))] for x in trackdata_diff]
+			trackdata_diff = [[x[0],x[1],x[2],encodeVL(int(2000.*x[3]))] for x in trackdata_diff] ## 2000= 1000 ticks per quarter * 2 (because 120 bpm = 2 quarters per seconds)
 			
 			# Number of bytes of the track chunk: 15 for standard info (120bpm, fake notes, etc.), 4 for the tail, the rest depends on the data
 			trackdata_numbytes = 15+4+3*len(trackdata_diff)+sum([len(x[3]) for x in trackdata_diff])

@@ -4,3 +4,5 @@ Various programs in different languages to generate MIDI files of John Cage's Nu
 
 *******************************
 
+The Java code is not supported anymore and is kept for historical reasons.
+
